@@ -9,7 +9,7 @@
         <div class="modal-body">
             <div class="d-flex align-items-start align-items-center">
                 <div class="mr-4">
-                    <img src="{{ $user->picture_path ?? asset('profile_placeholder.png') }} ? {{ now() }}" alt="Foto Profil" class="rounded-circle"
+                    <img src="{{ $user->picture_path ?? asset('profile_placeholder.png') }}" alt="Foto Profil" class="rounded-circle"
                         style="width: 150px; height: 150px; object-fit: cover;">
                 </div>
 

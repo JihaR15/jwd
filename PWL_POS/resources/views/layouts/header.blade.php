@@ -141,7 +141,7 @@
 
     <li class="nav-item dropdown">
       <a class="nav-link d-flex align-items-center" data-toggle="dropdown" href="#" role="button">
-        <img src="{{ $user->picture_path ?? asset('profile_placeholder.png') }} ? {{ now() }}" alt="User Image"
+        <img src="{{ $user->picture_path ?? asset('profile_placeholder.png') }}" alt="User Image"
           class="img-circle mr-2" style="width: 32px; height: 32px; object-fit: cover;">
         
         <div class="d-none d-sm-inline" style="line-height: 1;">
