@@ -10,16 +10,16 @@ use App\Http\Controllers\PenjualanController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Artisan;
+// use Illuminate\Support\Facades\Artisan;
 
-Route::get('/setup-db-rahasia', function () {
-    try {
-        Artisan::call('migrate', ['--seed' => true, '--force' => true]);
-        return "Migrasi PWL_POS Sukses! Silakan kembali ke halaman utama.";
-    } catch (\Exception $e) {
-        return "Error: " . $e->getMessage();
-    }
-});
+// Route::get('/setup-db-rahasia', function () {
+//     try {
+//         Artisan::call('migrate', ['--seed' => true, '--force' => true]);
+//         return "Migrasi PWL_POS Sukses! Silakan kembali ke halaman utama.";
+//     } catch (\Exception $e) {
+//         return "Error: " . $e->getMessage();
+//     }
+// });
 
 Route::pattern('id','[0-9]+'); //artinya ketika ada parameter {id}, maka harus berupa angka
 
